@@ -1,0 +1,121 @@
+.choose {
+    padding: 80px 0;
+    background: #F9FAFF;
+    z-index: 0;
+    position: relative;
+}
+
+.overlay {
+    background: linear-gradient(45deg, #553be6 0%, #a87ffa 100%);
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    z-index: -1;
+}
+
+.choose-text {
+    max-width: 44.9em;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.choose-text p:first-child {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: -1px;
+}
+
+.choose-text h2 {
+    font-size: 2.5em;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #fff;
+    text-align: center;
+}
+
+.choose-text p {
+    color: #fff;
+    text-align: center;
+    font-size: 0.9em;
+    margin: 10px 0 24px 0;
+}
+
+.container-choose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.box-choose {
+    max-width: 16.875em;
+    background: #fff;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 50px 20px 50px 20px;
+    box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.icon-choose {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #1fb6fc;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+.icon-choose .fas, .icon-choose .far {
+    color: #fff;
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 2;
+    transition: 0.3s;
+}
+
+.box-choose h3 {
+    font-size: 1.5em;
+    margin: 12.8px 0 10px 0;
+    line-height: 1.5;
+    color: #2a3a60;
+}
+
+.box-choose p{
+    color: #88879e;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.box-choose:hover {
+    background: #1fb6fc;
+    transform: translate3d(0px, -10px, 0px);
+    box-shadow: 0 2px 22px -1px rgba(0, 0, 0, 0.3);
+}
+
+.box-choose:hover  p, .box-choose:hover  h3 {
+    color: #fff;
+}
+
+.box-choose:hover .fas, .box-choose:hover .far {
+    color: #1fb6fc;
+}
+
+.box-choose:hover .icon-choose {
+    background: #fff;
+}
+
+.p-choose {
+    max-width: 44.875em;
+    color: #88879e;
+    font-size: 0.9em;
+    margin: 0 auto;
+    padding: 0 10px;
+}

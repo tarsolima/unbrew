@@ -1,0 +1,273 @@
+@import 'geral.css';
+@import 'header.css';
+@import 'home.css';
+@import 'services.css';
+@import 'about.css';
+@import 'team.css';
+@import 'testimonial.css';
+@import 'choose.css';
+@import 'portfolio.css';
+@import 'pricing.css';
+@import 'newsletter.css';
+@import 'footer.css';
+@import 'scroll.css';
+@import 'dropdown.css';
+
+
+@media (max-width: 1101px) {
+    .container-box {
+        max-width: 32em;
+    }
+}
+
+@media (max-width: 953px) {
+    /* header */
+    header h1 {
+        margin-left: 0px;
+    }
+
+    .home .box-1 {
+        margin-left: 110px;
+    }
+
+    /* About */
+    .about {
+        flex-wrap: wrap;
+        padding: 30px 0;
+    }
+
+    .box-about {
+        margin-top: 20px;
+    }
+
+    .newsletter-text {
+        margin-right: 10px;
+    }
+
+}
+
+@media (max-width: 901px) {
+
+    /* Services */
+    .container-box {
+        max-width: 47em;
+    }
+
+    .services {
+        flex-wrap: wrap;
+    }
+
+    .text-box {
+        margin-bottom: 50px;
+        padding: 0 10px 0 10px;
+    }
+
+    /* Services */
+
+    .box-services {
+        width: 18.75em;
+        flex-direction: column;
+    }
+
+    .img-service {
+        width: 100%;
+        height: 200px;
+        right: 0;
+    }
+
+    .project-services + .project-services {
+        margin-left: 0px;
+    }
+
+    .project-services {
+        padding: 20px 0;
+        border-bottom: 1px dashed #eeeded;
+        text-align: center;
+    }
+
+    .project-services:last-child {
+        border-bottom: none;
+    }
+
+    /* newsletter */
+
+    .newsletter-text {
+        text-align: center;
+    }
+
+    form {
+        margin-right: 10px;
+    }
+
+    form input[type=email] {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 754px) {
+    /* Services */
+    .container-box {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 609px) {
+    .newsletter-text h2 {
+        font-size: 1.3em
+    }
+
+    footer {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    footer .umbrew-footer {
+        margin-bottom: 40px;
+    }
+
+    footer .explore {
+        margin-bottom: 40px;
+        margin-right: 45px;
+    }
+}
+
+@media (max-width: 585px) {
+    
+    header {
+        margin-left: 0px;
+        justify-content: center;
+    }
+
+    header h1 {
+        margin: 0 auto;
+        padding-left: 10px;
+    }
+
+    /* Home */
+    .home .box-1 {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    /* Home */
+    .box-2 img {
+        width: 100%;
+    }
+
+    /* About */
+    .box-about h2 {
+        font-size: 2em;
+    }
+
+    /* Team */
+    .text-team  h2 {
+        font-size: 2em;
+        margin: 10px 0 -10px 0;
+    }
+
+    /* Testimonial */
+    .testimonial-text h2 {
+        font-size: 2em;
+    }
+
+    /* Choose */
+    .choose-text h2 {
+        font-size: 2em;
+    }
+
+    /* Portfolio */
+    .portfolio-text h2 {
+        font-size: 2em;
+    }
+
+    /* Pricing */
+    .pricing-text h2 {
+        font-size: 1.9em;
+    }
+}
+
+@media (max-width: 463px) {
+    header nav {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 425px) {
+    
+    /* Home */
+    .home .box-1 {
+        margin-left: 0px;
+        padding: 0 10px;
+    }
+
+    /* About */
+    .about .box-img-about {
+        margin-right: 0px;
+        padding: 0 20px;
+    }
+
+    .box-about h2 {
+        font-size: 1.5em;
+    }
+
+    /* Choose */
+    .choose-text h2 {
+        font-size: 1.5em;
+    }
+
+    /* Testimonial */
+    .box-testimonial {
+        margin: 20px 10px 40px 10px;
+        padding: 40px 10px 30px 10px;
+    }
+}
+
+@media (max-width:396px) {
+    .home .box-1 h1{
+        font-size: 2em;
+    }
+
+    .home .box-1 .bottom-home1, .bottom-home2 {
+        padding: 12px;
+    }
+    /* Team */
+    .text-team h2 {
+        font-size: 1.5em;
+    }
+
+    /* Pricing */
+    .pricing-text h2 {
+        font-size: 1.5em;
+    }
+
+}
+
+@media (max-width: 375px) {
+    
+    /* Home */
+    .home .box-2 img{
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    /* Testimonial */
+    .persona {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 348px) {
+    /* Services */
+    .text-box h2 {
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width: 340px) {
+    /* Home */
+    .home .fab {
+        left: 80px;
+    }
+}
