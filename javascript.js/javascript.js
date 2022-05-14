@@ -55,41 +55,66 @@ function initnumber() {
 
 initnumber();
 
+function initDropdown() {
 
-const dropdown = document.querySelectorAll('[data-dropdown]');
+    const dropdown = document.querySelectorAll('[data-dropdown]');
 
-dropdown.forEach((itens) => {
-    ['touchstart', 'click'].forEach((userEvent) => {
-        itens.addEventListener(userEvent, handleDropDown);
-    });
-});
-
-
-function handleDropDown(itens) {
-    itens.preventDefault();
-    this.classList.add('active');
-    outsideClick(this, ['touchstart', 'click'] ,() => {
-        this.classList.remove('active');
-    })
-}
-
-function outsideClick(element, events ,callback) {
-    const html = document.documentElement;
-    const outside = 'data-outside';
-    if(!element.hasAttribute(outside)) {
-        events.forEach((userEvent) => {
-            html.addEventListener(userEvent, handleOutside);
+    dropdown.forEach((itens) => {
+        ['touchstart', 'click'].forEach((userEvent) => {
+            itens.addEventListener(userEvent, handleDropDown);
         });
-        element.setAttribute(outside, '');
+    });
+
+
+    function handleDropDown(itens) {
+        itens.preventDefault();
+        this.classList.add('active');
+        outsideClick(this, ['touchstart', 'click'] ,() => {
+            this.classList.remove('active');
+        })
     }
 
-    function handleOutside(event) {
-        if(!element.contains(event.target)) {
-            element.removeAttribute(outside);
+    function outsideClick(element, events ,callback) {
+        const html = document.documentElement;
+        const outside = 'data-outside';
+        if(!element.hasAttribute(outside)) {
             events.forEach((userEvent) => {
-                html.removeEventListener(userEvent, handleOutside);
+                html.addEventListener(userEvent, handleOutside);
             });
-            callback();
+            element.setAttribute(outside, '');
+        }
+
+        function handleOutside(event) {
+            if(!element.contains(event.target)) {
+                element.removeAttribute(outside);
+                events.forEach((userEvent) => {
+                    html.removeEventListener(userEvent, handleOutside);
+                });
+                callback();
+            }
         }
     }
 }
+
+initDropdown();
+
+const openModal = document.querySelector('[data-abrir="modal"]');
+const closedModal = document.querySelector('[data-modal="fechar"]');
+const modalContainer = document.querySelector('[data-container]');
+
+
+function startModal(event) {
+    event.preventDefault();
+    modalContainer.classList.toggle('active');
+}
+
+function eventContainer(event) {
+    event.preventDefault();
+    if(event.target === this) {
+        startModal(event);
+    }
+}
+
+openModal.addEventListener('click', startModal);
+closedModal.addEventListener('click', startModal);
+modalContainer.addEventListener('click', eventContainer);
