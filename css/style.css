@@ -1580,10 +1580,10 @@ footer {
   .newsletter-text {
     text-align: center;
   }
-  form {
+  .newsletter form {
     margin-right: 10px;
   }
-  form input[type=email] {
+  .newsletter form input[type=email] {
     margin-left: 15px;
   }
 }
