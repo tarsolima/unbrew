@@ -55,7 +55,32 @@ function initnumber() {
 
 initnumber();
 
-function initDropdown() {
+function initModal() {
+    const openModal = document.querySelector('[data-abrir="modal"]');
+    const closedModal = document.querySelector('[data-modal="fechar"]');
+    const modalContainer = document.querySelector('[data-container]');
+    
+    
+    function startModal(event) {
+        event.preventDefault();
+        modalContainer.classList.toggle('active');
+    }
+    
+    function eventContainer(event) {
+        event.preventDefault();
+        if(event.target === this) {
+            startModal(event);
+        }
+    }
+    
+    openModal.addEventListener('click', startModal);
+    closedModal.addEventListener('click', startModal);
+    modalContainer.addEventListener('click', eventContainer);
+    }
+    
+    initModal();
+
+// function initDropdown() {
 
     const dropdown = document.querySelectorAll('[data-dropdown]');
 
@@ -79,7 +104,7 @@ function initDropdown() {
         const outside = 'data-outside';
         if(!element.hasAttribute(outside)) {
             events.forEach((userEvent) => {
-                html.addEventListener(userEvent, handleOutside);
+                setTimeout(() => html.addEventListener(userEvent, handleOutside));
             });
             element.setAttribute(outside, '');
         }
@@ -94,27 +119,25 @@ function initDropdown() {
             }
         }
     }
+// }
+
+// initDropdown();
+
+
+
+const menuMobile = document.querySelector('[data-mobile="click"]');
+const menuList = document.querySelector('[data-mobile="list"]');
+
+['touchstart', 'click'].forEach((userEvent) => {
+    menuMobile.addEventListener(userEvent, startMobile);
+}) 
+
+
+function startMobile() {
+    menuMobile.classList.add('active');
+    menuList.classList.add('active');
+    outsideClick(menuList, ['touchstart', 'click'], () => {
+        menuMobile.classList.remove('active');
+        menuList.classList.remove('active');
+    })
 }
-
-initDropdown();
-
-const openModal = document.querySelector('[data-abrir="modal"]');
-const closedModal = document.querySelector('[data-modal="fechar"]');
-const modalContainer = document.querySelector('[data-container]');
-
-
-function startModal(event) {
-    event.preventDefault();
-    modalContainer.classList.toggle('active');
-}
-
-function eventContainer(event) {
-    event.preventDefault();
-    if(event.target === this) {
-        startModal(event);
-    }
-}
-
-openModal.addEventListener('click', startModal);
-closedModal.addEventListener('click', startModal);
-modalContainer.addEventListener('click', eventContainer);
