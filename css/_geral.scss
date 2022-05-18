@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+  
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+@mixin bottom-hover {
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 0;
+}
