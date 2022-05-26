@@ -1,0 +1,109 @@
+.testimonial {
+    padding: 60px 0 80px 0;
+    background: #f9faff;
+  
+  .testimonial-text {
+    max-width: 37.5em;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    p:first-child {
+        color: #1fb6fc;
+        text-align: center;
+        letter-spacing: 2px;
+        margin-bottom: -1px;
+    }
+
+    h2 {
+        font-size: 2.5em;
+        font-weight: 400;
+        line-height: 1.4;
+        color: #2a3a60;
+        text-align: center;
+    }
+
+    p {
+        color: #88879e;
+        text-align: center;
+        font-size: 0.9em;
+        margin: 10px 0 24px 0;
+    }
+  }
+
+  .testimonial-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 48px;
+
+    .box-testimonial {
+        width: 23.125em;
+        background: #fff;
+        margin: 20px 20px 40px 20px;
+        padding: 40px 30px 30px 30px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        box-shadow: 0px 5px 12px -9px rgba(0, 0, 0, 0.17);
+
+        .quote {
+            position: absolute;
+            top: -20px;
+            right: 45%;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: #1fb6fc;
+
+            .fa-quote-left {
+                color: #fff;
+                line-height: 2.5;
+                position: relative;
+                left: 14px;
+                top: 2px;
+            }
+        }
+
+        .img-testimonial {
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            border-radius: 50%;
+            bottom: 30px;
+          }
+
+        .img-test1 {
+          @include img-testimonial(url("../img/testimonal1.webp"));
+        }
+        
+        .img-test2 {
+          @include img-testimonial(url("../img/testimonal2.webp"));
+        }
+        
+        .img-test3 {
+          @include img-testimonial(url("../img/testimonal3.webp"));
+        }
+
+        .persona {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 5px;
+
+            span {
+                margin-right: 30px;
+                font-weight: bold;
+                font-size: 17px;
+                color: #2a3a60;
+            }
+
+            p {
+                font-size: 0.875em;
+                color: #1fb6fc;
+                font-weight: 400;
+            }
+        }
+    }
+  }  
+}

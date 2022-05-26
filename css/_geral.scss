@@ -17,3 +17,17 @@ body {
     border-bottom-left-radius: 50px;
     border-top-left-radius: 0;
 }
+
+@mixin imagem-team($background) {
+  background-image: $background;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin img-testimonial($background) {
+  background: $background;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
