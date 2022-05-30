@@ -75,15 +75,15 @@
           }
 
         .img-test1 {
-          @include img-testimonial(url("../img/testimonal1.webp"));
+          @include img-testimonialePortifolio(url("../img/testimonal1.webp"));
         }
         
         .img-test2 {
-          @include img-testimonial(url("../img/testimonal2.webp"));
+          @include img-testimonialePortifolio(url("../img/testimonal2.webp"));
         }
         
         .img-test3 {
-          @include img-testimonial(url("../img/testimonal3.webp"));
+          @include img-testimonialePortifolio(url("../img/testimonal3.webp"));
         }
 
         .persona {
