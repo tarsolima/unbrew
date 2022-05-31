@@ -1,0 +1,122 @@
+.container-modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7)
+  }
+  
+  .container-modal.active {
+    display: flex;
+    animation: showmodal .5s forwards;
+    z-index: 5;
+  }
+  
+  @keyframes showmodal {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -30px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0px, 0);
+    }
+  }
+  
+  [data-abrir="modal"] {
+    color: #fff;
+    background: #1fb6fc;
+    font-size: 1em;
+    border-radius: 50px;
+    border-bottom-left-radius: 0px;
+    padding: 15px 30px;
+    margin-left: 15px;
+    transition: 0.3s;
+  
+    &:hover {
+      border-bottom-left-radius: 50px;
+      border-top-left-radius: 0px;
+    }
+  }
+  
+  .box-modal {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    background: #fff;
+    width: 350px;
+    border-radius: 5px;
+  
+    .modal-fechar {
+      position: absolute;
+      top: -10px;
+      right: -5px;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      border: none;
+      background: #1fb6fc;
+      color: #fff;
+      font-size: 18px;
+      box-shadow: 0 0 0 4px #fff;
+      cursor: pointer;
+      transition: all .3s;
+  
+      &:hover {
+        background: #BC6FF1;
+      }
+    }
+  
+    form {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content:center;
+      padding: 20px 20px 40px 20px;
+  
+      label {
+        display: block;
+        margin: 15px 0 5px 0;
+        color: #434347;
+        font-size: 14px;
+      }
+    
+      input {
+        height: 30px;
+        color: #88879e;
+        padding-left: 10px;
+        border: 1px solid rgba(61, 59, 59, 0.685);
+        outline: none;
+        transition: all .3s;
+  
+        &:focus {
+          border: 1px solid #1fb6fc;
+        }
+      }
+  
+      button {
+      color: #fff;
+      width: 100px;
+      background: #1fb6fc;
+      font-size: 0.875em;
+      text-transform: uppercase;
+      font-weight: bold;
+      border-radius: 50px;
+      border: none;
+      padding: 15px 25px;
+      margin-top: 20px;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.3s;
+        
+        &:hover {
+          background: #bc6ff1;
+        }
+      }
+    }
+  }
