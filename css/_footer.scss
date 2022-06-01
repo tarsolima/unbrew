@@ -2,9 +2,22 @@ footer {
     display: flex;
     justify-content: space-around;
     padding: 80px 10px 60px 10px;
+
+    @media (max-width: 609px) {
+        & {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
   
   .umbrew-footer {
     max-width: 12.5em;
+
+    @media (max-width: 609px) {
+        & {
+            margin-bottom: 40px;
+        }
+    }
 
     h3 {
         color: #1fb6fc;
@@ -47,6 +60,13 @@ footer {
   }
   
   .explore {
+    @media (max-width: 609px) {
+        & {
+          margin-bottom: 40px;
+          margin-right: 45px;
+        }
+    }
+
     h3 {
         color: #2a3a60;
         font-size: 1.125em;

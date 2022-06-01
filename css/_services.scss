@@ -1,13 +1,26 @@
 .services {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 50px 0;
-    background: #fcfcfc;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 0;
+  background: #fcfcfc;
+
+  @media (max-width: 901px) {
+    & {
+        flex-wrap: wrap;
+    }
+  }
       
   .text-box {
     width: 28em;
     margin: 15px 0;
     padding: 0 10px 0 30px;
+
+    @media (max-width: 901px) {
+      & {
+        margin-bottom: 50px;
+        padding: 0 10px 0 10px;
+      }
+    }
 
         p:first-child {
             color: #1fb6fc;
@@ -45,6 +58,20 @@
     display: flex;
     max-width: 47em;
     flex-wrap: wrap;
+
+    @media (max-width: 1101px) {
+      & {
+          max-width: 32em;
+      }
+    }
+
+    @media (max-width: 901px) {
+      & {
+          margin-top: 20px;
+          max-width: 47em;
+          justify-content: center;
+      }
+    }
   }
   
   .box-space {
@@ -123,6 +150,13 @@
     box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.1);
     position: relative;
 
+    @media (max-width: 901px) {
+      & {
+        width: 18.75em;
+        flex-direction: column;
+      }
+    }
+
     .img-service {
       display: block;
       width: 24%;
@@ -133,12 +167,40 @@
       background-position: center center;
       position: relative;
       right: 21px;
+
+      @media (max-width: 901px) {
+        & {
+          width: 100%;
+          height: 200px;
+          right: 0;
+        }
+      }
     }
 
     .project-services  {
+      @media (max-width: 901px) {
+      & {
+        padding: 20px 0;
+          border-bottom: 1px dashed #eeeded;
+          text-align: center;
+        }
+      }
+
+      @media (max-width: 901px) {
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+      
       & + .project-services {
         margin-left: 50px;
         text-align: center;
+        @media (max-width: 901px) {
+          &  {
+            margin-left: 0px;
+            
+          }
+        }
       }
   
       p:first-child {

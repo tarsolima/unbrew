@@ -1,5 +1,6 @@
 .newsletter {
     background: #0d6efd;
+    
   
   .box-newsletter {
     display: flex;
@@ -11,10 +12,27 @@
     .newsletter-text {
         padding: 0 10px;
 
+        @media (max-width: 953px) {
+            & {
+                margin-right: 10px;
+            }
+        }
+
+        @media (max-width: 901px) {
+            .newsletter-text {
+                text-align: center;
+            }
+        }
+
         h2 {
             color: #fff;
             font-size: 1.6875em;
             font-weight: bold;
+            @media (max-width: 609px) {
+                & {
+                    font-size: 1.3em;
+                }
+            }
         }
 
         p {
@@ -27,6 +45,12 @@
   .form {
     position: relative;
 
+    @media (max-width: 901px) {
+         & {
+            margin-right: 10px;
+        }
+    }
+
     input[type="email"] {
         width: 18.75em;
         outline: none;
@@ -37,6 +61,12 @@
         border: none;
         border-bottom: 1px solid #fff;
         padding: 0 0 10px 10px;
+
+        @media (max-width: 901px) {
+            input[type=email] {
+              margin-left: 15px;
+            }
+        }
 
         &::placeholder {
             color: #fff;
