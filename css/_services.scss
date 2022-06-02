@@ -6,7 +6,7 @@
 
   @media (max-width: 901px) {
     & {
-        flex-wrap: wrap;
+      flex-wrap: wrap;
     }
   }
       
@@ -22,35 +22,35 @@
       }
     }
 
-        p:first-child {
-            color: #1fb6fc;
+    p:first-child {
+      color: #1fb6fc;
+    }
+
+    h2 {
+      font-size: 2.5em;
+      font-weight: 400;
+      line-height: 1.4;
+      color: #2a3a60;
+
+      @media (max-width: 348px) {
+        & {
+          font-size: 2.2em;
         }
+      }
+    }
 
-        h2 {
-            font-size: 2.5em;
-            font-weight: 400;
-            line-height: 1.4;
-            color: #2a3a60;
-          }
-          
-          p ~ p {
-            color: #88879e;
-            margin: 15px 0 40px 0;
-          }
+    p ~ p {
+      color: #88879e;
+      margin: 15px 0 40px 0;
+    }
 
-          a {
-            color: #fff;
-            background: #1fb6fc;
-            font-size: 0.875em;
-            border-radius: 50px;
-            border-bottom-left-radius: 0px;
-            padding: 20px;
-            transition: 0.3s;
+    a {
+      @include configbuttom;
 
-            &:hover {
-              @include bottom-hover;
-            }
-          }
+      &:hover {
+        @include bottom-hover;
+      }
+    }
           
   }
 
@@ -61,15 +61,15 @@
 
     @media (max-width: 1101px) {
       & {
-          max-width: 32em;
+        max-width: 32em;
       }
     }
 
     @media (max-width: 901px) {
       & {
-          margin-top: 20px;
-          max-width: 47em;
-          justify-content: center;
+        margin-top: 20px;
+        max-width: 47em;
+        justify-content: center;
       }
     }
   }
@@ -195,21 +195,21 @@
       & + .project-services {
         margin-left: 50px;
         text-align: center;
+
         @media (max-width: 901px) {
           &  {
             margin-left: 0px;
-            
           }
         }
       }
-  
+
       p:first-child {
         color: #1fb6fc;
         font-size: 3.125em;
         line-height: 1;
         margin-bottom: 10px;
       }
-      
+
       p:last-child {
         font-size: 0.875em;
         color: #2a3a60;

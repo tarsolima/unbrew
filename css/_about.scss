@@ -73,14 +73,8 @@
     }
 
     a {
-        color: #fff;
-        background: #1fb6fc;
-        font-size: 0.875em;
-        border-radius: 50px;
-        border-bottom-left-radius: 0px;
-        padding: 15px 25px;
+        @include configbuttom;
         margin-left: -5px;
-        transition: 0.3s;
 
         &:hover {
             @include bottom-hover;

@@ -29,7 +29,7 @@
   
   [data-abrir="modal"] {
     color: #fff;
-    background: #1fb6fc;
+    background: $bottom-blue;
     font-size: 1em;
     border-radius: 50px;
     border-bottom-left-radius: 0px;
@@ -60,7 +60,7 @@
       width: 30px;
       border-radius: 50%;
       border: none;
-      background: #1fb6fc;
+      background: $bottom-blue;
       color: #fff;
       font-size: 18px;
       box-shadow: 0 0 0 4px #fff;
@@ -102,7 +102,7 @@
       button {
       color: #fff;
       width: 100px;
-      background: #1fb6fc;
+      background: $bottom-blue;
       font-size: 0.875em;
       text-transform: uppercase;
       font-weight: bold;

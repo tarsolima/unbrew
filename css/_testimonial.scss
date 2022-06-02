@@ -104,6 +104,12 @@
         margin-top: 30px;
         margin-bottom: 5px;
 
+        @media (max-width: 375px) {
+          & {
+            margin-left: 20px;
+          }
+        }
+
         span {
           margin-right: 30px;
           font-weight: bold;
