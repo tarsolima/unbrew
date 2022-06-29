@@ -51,6 +51,10 @@
     background: #fff;
     width: 350px;
     border-radius: 5px;
+
+    @media (max-width: 390px) {
+      width: 285px;
+    }
   
     .modal-fechar {
       position: absolute;
