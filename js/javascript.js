@@ -1,8 +1,8 @@
-import initScroll from './module/initscroll.js';
-import initNumber from './module/initnumber.js';
-import initModal from './module/initmodal.js';
-import initDropdown from './module/initdropdown.js';
-import initMenuMobile from './module/initmenumobile.js';
+import initScroll from './modules/initscroll.js';
+import initNumber from './modules/initnumber.js';
+import initModal from './modules/initmodal.js';
+import initDropdown from './modules/initdropdown.js';
+import initMenuMobile from './modules/initmenumobile.js';
 
 initScroll();
 initNumber();
