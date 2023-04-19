@@ -26,5 +26,6 @@ export default class Dropdown {
     if (this.dropdown.length) {
       this.addEvent();
     }
+    return this;
   }
 }
