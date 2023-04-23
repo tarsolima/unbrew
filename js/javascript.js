@@ -1,8 +1,9 @@
 import AnimaScroll from './modules/anima-scroll.js';
-import initNumber from './modules/initnumber.js';
+import Numeros from './modules/number.js';
 import Modal from './modules/modal.js';
 import Dropdown from './modules/dropdown.js';
 import MenuMobile from './modules/menu-mobile.js';
+import ScrollSuave from './modules/scroll-suave.js';
 
 const modal = new Modal('[data-abrir="modal"]', '[data-modal="fechar"]', '[data-container]');
 modal.init();
@@ -16,4 +17,8 @@ menuMobile.init();
 const scroll = new AnimaScroll('[data-scroll]');
 scroll.init();
 
-initNumber();
+const numeros = new Numeros('[data-numero]', '.fundo-services', 'active');
+numeros.init();
+
+const scrollSuave = new ScrollSuave('[data-link] a[href^="#"]');
+scrollSuave.init();

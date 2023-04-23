@@ -13,12 +13,12 @@
 </head>
 <body>
     <div class="fundo">
-        <header>
-            <h1 class="logo"><a href="#">Unbrew.</a></h1>
+        <header data-link>
+            <h1 class="logo"><a href="#home">Unbrew.</a></h1>
             <nav>
                 <button data-mobile="click">Menu</button>
                 <ul data-mobile="list">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li data-dropdown>
                         <a href="#">About Us</a>
                         <ul id="menu-list">
@@ -27,10 +27,10 @@
                             <li><a id="dropdown-a" href="#">Blog </a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
                     <li><a href="#" data-abrir="modal">Login</a></li>
                 </ul>
             </nav>
@@ -38,7 +38,7 @@
 
         <section class="home" data-scroll>
             <div class="box-1">
-                <h1>Boost Personal<br> Productivity</h1>
+                <h1 id="home">Boost Personal<br> Productivity</h1>
                 <p>A small river named Duden flows by their place and   supplies it<br> with the necessary regelialia.</p>
                 <a href="#" class="bottom-home1">Start A Project</a>
                 <a href="#" class="bottom-home2">Call us For any Inquiry</a>
@@ -54,7 +54,7 @@
         </section>
     </div>
     <main>
-        <section class="services" data-scroll>
+        <section class="services" id="service">
             <div class="text-box">
                 <p>Our Services</p>
                 <h2>We Provide A lot<br>of Cool Services</h2>
@@ -337,7 +337,7 @@
         </section>
 
         <section class="portfolio" data-scroll>
-            <div class="portfolio-text">
+            <div class="portfolio-text" id="work">
                 <p>Our Portfolio</p>
                 <h2>Our Awesome Work</h2>
                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in  Bookmarksgrove.</p>
@@ -382,7 +382,7 @@
         </section>
 
         <section class="pricing" data-scroll>
-            <div class="pricing-text">
+            <div class="pricing-text" id="pricing">
                 <p>Pricing</p>
                 <h2>Choose Your Pricing Plan</h2>
                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in  Bookmarksgrove.</p>
@@ -477,18 +477,17 @@
 
         <div class="explore">
             <h3>Explore</h3>
-            <ul>
+            <ul data-link="">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Works</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </div>
 
-        <div class="have">
+        <div class="have" id="contact">
             <h3>Have a Questions?</h3>
             <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
             <p>55 1195585-4055</p>
