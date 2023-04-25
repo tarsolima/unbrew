@@ -83,6 +83,32 @@ footer {
             color: #1fb6fc;
         }
     }
+
+    #explore-background {
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -9px;
+            left: 5px;
+            width: 0;
+            height: 0;
+            border-bottom: 10px solid #1fb6fc;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+          }
+        
+        a {
+            color: #fff;
+            padding: 0px;
+            margin-bottom: 0px;
+
+            &:hover {
+                color: #000;
+            }
+        }
+    }
   }
   
   .have {

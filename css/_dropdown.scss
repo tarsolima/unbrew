@@ -1,7 +1,7 @@
 [data-dropdown] {
   position: relative;
   
-  #menu-list {
+  .menu-list {
     display: none;
     position: absolute;
     top: 33px;
@@ -34,8 +34,8 @@
     }
   }
   
-  &:hover #menu-list,
-  &.active #menu-list {
+  &:hover .menu-list,
+  &.active .menu-list {
     display: block;
     animation: initdropdown .5s forwards;
   }
