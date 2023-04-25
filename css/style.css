@@ -28,6 +28,9 @@ header {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header h1 {
@@ -56,11 +59,7 @@ header nav ul {
   display: flex;
 }
 
-header nav ul li {
-  margin-top: 13px;
-}
-
-header nav ul li a {
+header nav ul a {
   padding: 10px;
 }
 
@@ -1548,6 +1547,29 @@ footer .explore a:hover {
   color: #1fb6fc;
 }
 
+footer .explore #explore-background::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -9px;
+  left: 5px;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid #1fb6fc;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+footer .explore #explore-background a {
+  color: #fff;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+footer .explore #explore-background a:hover {
+  color: #000;
+}
+
 footer .have {
   max-width: 12.5em;
 }
@@ -1568,7 +1590,7 @@ footer .have p {
   position: relative;
 }
 
-[data-dropdown] #menu-list {
+[data-dropdown] .menu-list {
   display: none;
   position: absolute;
   top: 33px;
@@ -1581,7 +1603,7 @@ footer .have p {
   transition: all 5s;
 }
 
-[data-dropdown] #menu-list::before {
+[data-dropdown] .menu-list::before {
   content: '';
   display: block;
   position: absolute;
@@ -1594,16 +1616,16 @@ footer .have p {
   border-right: 10px solid transparent;
 }
 
-[data-dropdown] #menu-list li {
+[data-dropdown] .menu-list li {
   margin-top: 5px;
 }
 
-[data-dropdown] #menu-list li a {
+[data-dropdown] .menu-list li a {
   padding: 5px;
 }
 
-[data-dropdown]:hover #menu-list,
-[data-dropdown].active #menu-list {
+[data-dropdown]:hover .menu-list,
+[data-dropdown].active .menu-list {
   display: block;
   -webkit-animation: initdropdown .5s forwards;
           animation: initdropdown .5s forwards;
@@ -1879,9 +1901,6 @@ footer .have p {
     -webkit-animation: dropdown .3s forwards;
             animation: dropdown .3s forwards;
   }
-  [data-mobile="list"] li:last-child {
-    margin-top: 20px;
-  }
   @-webkit-keyframes dropdown {
     from {
       opacity: 0;
@@ -1906,8 +1925,8 @@ footer .have p {
               transform: translate3d(0px, 0, 0);
     }
   }
-  #menu-list {
-    position: static !important;
+  .menu-list {
+    position: static;
   }
   [data-abrir="modal"] {
     margin-left: 0;

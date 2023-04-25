@@ -53,10 +53,6 @@
       display: block;
       animation: dropdown .3s forwards;
     }
-
-    li:last-child {
-      margin-top: 20px;
-    }
   }
 
   @keyframes dropdown {
@@ -71,8 +67,8 @@
     }
   }
 
-  #menu-list { 
-    position: static !important;
+  .menu-list { 
+    position: static;
   }
   
   [data-abrir="modal"] {
