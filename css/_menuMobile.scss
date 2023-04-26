@@ -46,7 +46,7 @@
     border-radius: 14px;
     background: #9972F6;
     box-shadow: 2px 2px 4px 0 #1fb6fc, 2px 2px 2px 0 rgba(0,0,0,.2);
-    padding: 60px 10px 40px 10px;
+    padding: 60px 10px 20px 10px;
     z-index: 1;
 
     &.active {
@@ -72,10 +72,11 @@
   }
   
   [data-abrir="modal"] {
-    margin-left: 0;
+    display: inline-block;
+    margin: 5px 0 0 0;
     
-    &:nth-last-child() {
-      margin-top: 10px;
-    }
+    // &:nth-last-child() {
+    //   margin-top: 10px;
+    // }
   }
 }
