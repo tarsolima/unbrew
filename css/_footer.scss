@@ -85,7 +85,6 @@ footer {
     }
 
     #explore-background {
-
         &::before {
             content: '';
             display: block;
@@ -97,6 +96,10 @@ footer {
             border-bottom: 10px solid #1fb6fc;
             border-left: 10px solid transparent;
             border-right: 10px solid transparent;
+
+            @media (max-width: 830px) {
+                top: 29px;
+            }
           }
         
         a {

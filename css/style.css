@@ -1231,6 +1231,11 @@ footer .explore #explore-background::before {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
 }
+@media (max-width: 830px) {
+  footer .explore #explore-background::before {
+    top: 29px;
+  }
+}
 footer .explore #explore-background a {
   color: #fff;
   padding: 0px;
