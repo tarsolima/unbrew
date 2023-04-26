@@ -10,7 +10,6 @@
     background: $bottom-blue;
     border-radius: 10px;
     z-index: 1;
-    transition: all 5s;
 
     &::before {
       content: '';
@@ -23,6 +22,16 @@
       border-bottom: 10px solid #fff;
       border-left: 10px solid transparent;
       border-right: 10px solid transparent;
+    }
+
+    @media (max-width: 830px) {
+      display: block;
+      position: static;
+      margin-top: 4px;
+
+      &::before {
+        top: 24px;
+      }
     }
 
     li {
@@ -38,6 +47,11 @@
   &.active .menu-list {
     display: block;
     animation: initdropdown .5s forwards;
+
+  @media (max-width: 830px) {
+    display: block;
+    animation: none;
+  }
   }
   
   @keyframes initdropdown {
