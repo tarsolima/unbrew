@@ -4,6 +4,7 @@ import Modal from './modules/modal.js';
 import Dropdown from './modules/dropdown.js';
 import MenuMobile from './modules/menu-mobile.js';
 import ScrollSuave from './modules/scroll-suave.js';
+import SlideNav from './modules/slide.js';
 
 const modal = new Modal('[data-abrir="modal"]', '[data-modal="fechar"]', '[data-container]');
 modal.init();
@@ -22,3 +23,8 @@ numeros.init();
 
 const scrollSuave = new ScrollSuave('[data-link] a[href^="#"]');
 scrollSuave.init();
+
+const slide = new SlideNav('.slide', '.slide-wrapper');
+slide.init();
+slide.addArrow('.prev', '.next');
+// slide.addControl('.custom-controls');
