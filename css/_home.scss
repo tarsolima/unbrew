@@ -1,22 +1,22 @@
 .home {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 50px;
-  padding-bottom: 200px;
+  padding: 60px 0;
   position: relative;
-  
-  @media (max-width: 953px) {
+
+  @media (max-width: 955px) {
     & {
-      margin-top: 20px;
+      flex-wrap: wrap;
+      padding: 30px 0 120px 0;
     }
   }
 
-  .box-1 {
-    margin-bottom: 120px;
-    padding: 0 10px;
+  .box-home {
+    max-width: 450px;
+    margin-bottom: 60px;
+    padding: 0 8px;
 
-    @media (max-width: 953px) {
+    @media (max-width: 955px) {
       & {
         margin-left: 110px;
       }
@@ -24,14 +24,7 @@
 
     @media (max-width: 585px) { 
       & {
-        margin-left: 50px;
-      }
-    }
-
-    @media (max-width: 425px) {
-      & {
         margin-left: 0px;
-        padding: 0 10px;
       }
     }
 
@@ -39,23 +32,36 @@
       font-size: 2.6em;
       line-height: 1.2;
       color: #fff;
-
-      @media (max-width:396px) {
-        &{
-          font-size: 2em;
-        }
-      }
     }
 
     p {
       font-size: 1em;
-      line-height: 1.8;
+      line-height: 1.5;
       color: #e0dbf7;
       margin: 10px 0 30px 0;
     }
+
+    .bottom-home1, .bottom-home2  {
+      @include configbuttom;
+
+      @media (max-width:394px) {
+        & {
+          padding: 20px 10px;
+        }
+      }
+
+      &:hover {
+        @include bottom-hover;
+      }
+    }
+
+    .bottom-home2 {
+      background: #bc6ff1;
+      margin-left: 10px;
+    }
   }
-  
-  .box-2 {
+
+  .box-home-img {
     max-width: 100%;
 
     img {
@@ -66,86 +72,40 @@
           width: 100%;
         }
       }
-
-      @media (max-width: 375px) {
-        & {
-          max-width: 100%;
-          padding: 0 15px;
-        }
-      }
     }
   }
-  
-  .bottom-home1 {
-    @include configbuttom;
 
-    @media (max-width:396px) {
-      & {
-        padding: 20px 10px;
-      }
-    }
-
-    &:hover {
-      @include bottom-hover;
-    }
-  }
-  
-  .bottom-home2 {
-    @include configbuttom;
-    background: #bc6ff1;
-
-    margin-left: 10px;
-
-    @media (max-width:396px) {
-      & {
-        padding: 20px 10px;
-      }
-    }
-
-    &:hover {
-      @include bottom-hover;
-    }
-  }
-   
-  .fab {
-    color: #fff;
-    font-size: 0.875em;
-    border-radius: 50%;
-    height: 25px;
-    width: 25px;
+  .icon {
     position: absolute;
-    bottom: 100px;
-    left: 100px;
-    transition: 0.3s;
+    bottom: 80px;
+    left: 86px;
 
-    @media (max-width: 340px) {
-      & {
-        left: 80px;
-      }
-    }
-  }
-  
-    .fa-twitter,
-    .fa-facebook-f,
-    .fa-instagram,
-    .fa-google-plus-g {
+    .fab {
+      color: #fff;
+      font-size: 0.875em;
       text-align: center;
       line-height: 1.8;
+      height: 25px;
+      width: 25px;
+      position: absolute;
+      border-radius: 50%;
+      transition: 0.3s;
 
       &:hover {
         background: #1fb6fc;
       }
     }
-  
-  .fa-facebook-f {
-    margin-left: 30px;
-  }
-  
-  .fa-instagram {
-    margin-left: 60px;
-  }
-  
-  .fa-google-plus-g {
-    margin-left: 90px;
+
+    .fa-facebook-f {
+      margin-left: 30px;
+    }
+
+    .fa-instagram {
+      margin-left: 60px;
+    }
+
+    .fa-github {
+      margin-left: 90px;
+    }
   }
 }

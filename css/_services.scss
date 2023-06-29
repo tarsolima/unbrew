@@ -1,24 +1,24 @@
 .services {
   display: flex;
   justify-content: space-evenly;
-  padding: 50px 0;
+  padding: 30px 0;
   background: #fcfcfc;
 
-  @media (max-width: 901px) {
+  @media (max-width: 1200px) {
     & {
       flex-wrap: wrap;
     }
   }
-      
+
   .text-box {
     width: 28em;
     margin: 15px 0;
     padding: 0 10px 0 30px;
 
-    @media (max-width: 901px) {
+    @media (max-width: 1200px) {
       & {
         margin-bottom: 50px;
-        padding: 0 10px 0 10px;
+        padding: 0 10px;
       }
     }
 
@@ -27,24 +27,19 @@
     }
 
     h2 {
-      font-size: 2.5em;
+      font-size: 2.4em;
       font-weight: 400;
-      line-height: 1.4;
+      line-height: 1.2;
       color: #2a3a60;
-
-      @media (max-width: 348px) {
-        & {
-          font-size: 2.2em;
-        }
-      }
     }
 
     p ~ p {
       color: #88879e;
-      margin: 15px 0 40px 0;
+      margin: 15px 0 20px 0;
     }
 
     a {
+      display: inline-block;
       @include configbuttom;
 
       &:hover {
@@ -58,75 +53,61 @@
     display: flex;
     max-width: 47em;
     flex-wrap: wrap;
+    justify-content: center;
 
-    @media (max-width: 1101px) {
-      & {
-        max-width: 32em;
-      }
-    }
+    .box-space {
+      .box {
+        max-width: 14.375em;
+        background: #fff;
+        text-align: center;
+        border-radius: 5px;
+        padding: 15px 0 20px 0;
+        margin: 10px;
+        box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
+        transition: 0.3s;
 
-    @media (max-width: 901px) {
-      & {
-        margin-top: 20px;
-        max-width: 47em;
-        justify-content: center;
-      }
-    }
-  }
+        &:hover {
+          background: #1fb6fc;
+          transform: translate3d(0, -10px, 0);
+          box-shadow: 0 2px 22px -1px rgba(0, 0, 0, 0.3);
+        }
+
+        &:hover h3,
+        &:hover p,
+        &:hover .icon {
+          color: #fff;
+        }
   
-  .box-space {
-    margin: 7px 8px 7px 8px;
-
-    .box {
-      max-width: 14.375em;
-      background: #fff;
-      text-align: center;
-      border-radius: 5px;
-      padding: 15px 0 20px 0;
-      box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
-      transition: 0.3s;
-
-      &:hover {
-        background: #1fb6fc;
-        transform: translate3d(0, -10px, 0);
-        box-shadow: 0 2px 22px -1px rgba(0, 0, 0, 0.3);
-      }
-
-      &:hover h3,
-      &:hover p,
-      &:hover .icon {
-        color: #fff;
-      }
-
-      h3 {
-        color: #2a3a60;
-        font-size: 1.0625em;
-        font-weight: 500;
-        margin-bottom: 10px;
-      }
-
-      p {
-        color: #88879e;
-        margin-bottom: 16px;
-        padding: 0 15px;
-      }
-
-      .icon {
-        margin: 5px auto;
-        border-radius: 50%;
-        width: 70px;
-        height: 70px;
-        background: #eff2ff;
-        
-        .fa-bullseye,
-        .fa-search-plus,
-        .fa-pen-nib,
-        .fa-lightbulb,
-        .fa-chart-line,
-        .fa-rocket {
-          font-size: 2.125em;
-          line-height: 2;
-          color: #1fb6fc;
+        h3 {
+          color: #2a3a60;
+          font-size: 1.0625em;
+          font-weight: 500;
+          margin-bottom: 10px;
+        }
+  
+        p {
+          color: #88879e;
+          margin-bottom: 16px;
+          padding: 0 15px;
+        }
+  
+        .icon {
+          margin: 5px auto;
+          border-radius: 50%;
+          width: 70px;
+          height: 70px;
+          background: #eff2ff;
+          
+          .fa-bullseye,
+          .fa-search-plus,
+          .fa-pen-nib,
+          .fa-lightbulb,
+          .fa-chart-line,
+          .fa-rocket {
+            font-size: 2.125em;
+            line-height: 2;
+            color: #1fb6fc;
+          }
         }
       }
     }
