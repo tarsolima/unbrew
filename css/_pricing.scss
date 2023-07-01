@@ -2,7 +2,7 @@
   padding: 30px 0;
 
   .pricing-text {
-    max-width: 37.5em;
+    max-width: 37.5rem;
     margin: 0 auto;
     padding: 0 10px;
 
@@ -14,7 +14,7 @@
     }
 
     h2 {
-      font-size: 2.25em;
+      font-size: 2.25rem;
       font-weight: 400;
       line-height: 1.4;
       color: #2a3a60;
@@ -22,13 +22,13 @@
 
       @media (max-width: 500px) {
         & {
-          font-size: 1.9em;
+          font-size: 1.9rem;
         }
       }
 
       @media (max-width:396px) {
         & {
-          font-size: 1.5em;
+          font-size: 1.5rem;
         }
       }
     }
@@ -36,7 +36,7 @@
     p {
       color: #88879e;
       text-align: center;
-      font-size: 0.9em;
+      font-size: 0.9rem;
       margin: 8px 0;
     }
   }
@@ -53,7 +53,7 @@
   .pricing-box {
     margin: 30px 10px 10px 10px;
     padding: 10px 10px 40px 10px;
-    width: 15.625em;
+    width: 15.625rem;
     background: #fff;
     border-radius: 4px;
     text-align: center;
@@ -71,7 +71,7 @@
     }
 
     p {
-      font-size: 3.125em;
+      font-size: 3.125rem;
       font-weight: 400;
       color: #1fb6fc;
       margin-right: 15px;
@@ -81,7 +81,7 @@
       margin-bottom: 20px;
       color: #2a3a60;
       text-transform: uppercase;
-      font-size: 0.8125em;
+      font-size: 0.8125rem;
       letter-spacing: 1px;
       text-align: center;
     }
@@ -96,7 +96,7 @@
 
       .fa-check {
         color: #1fb6fc;
-        margin-right: 0.5em;
+        margin-right: 0.5rem;
       }
     }
 

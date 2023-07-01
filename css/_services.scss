@@ -1,7 +1,7 @@
 .services {
   display: flex;
   justify-content: space-evenly;
-  padding: 30px 0;
+  padding: 30px 0 40px 0;
   background: #fcfcfc;
 
   @media (max-width: 1200px) {
@@ -11,7 +11,7 @@
   }
 
   .text-box {
-    width: 28em;
+    width: 28rem;
     margin: 15px 0;
     padding: 0 10px 0 30px;
 
@@ -22,19 +22,20 @@
       }
     }
 
-    p:first-child {
+    .subtitle-services {
       color: #1fb6fc;
     }
 
     h2 {
-      font-size: 2.4em;
+      font-size: 2.4rem;
       font-weight: 400;
       line-height: 1.2;
       color: #2a3a60;
     }
 
-    p ~ p {
+    .text-services {
       color: #88879e;
+      line-height: 1.5;
       margin: 15px 0 20px 0;
     }
 
@@ -51,13 +52,13 @@
 
   .container-box {
     display: flex;
-    max-width: 47em;
+    max-width: 47rem;
     flex-wrap: wrap;
     justify-content: center;
 
     .box-space {
       .box {
-        max-width: 14.375em;
+        max-width: 14.375rem;
         background: #fff;
         text-align: center;
         border-radius: 5px;
@@ -77,34 +78,35 @@
         &:hover .icon {
           color: #fff;
         }
-  
+
         h3 {
           color: #2a3a60;
-          font-size: 1.0625em;
+          font-size: 1.0625rem;
           font-weight: 500;
           margin-bottom: 10px;
         }
-  
+
         p {
           color: #88879e;
+          line-height: 1.5;
           margin-bottom: 16px;
           padding: 0 15px;
         }
-  
+
         .icon {
           margin: 5px auto;
           border-radius: 50%;
           width: 70px;
           height: 70px;
           background: #eff2ff;
-          
+
           .fa-bullseye,
           .fa-search-plus,
           .fa-pen-nib,
           .fa-lightbulb,
           .fa-chart-line,
           .fa-rocket {
-            font-size: 2.125em;
+            font-size: 2.125rem;
             line-height: 2;
             color: #1fb6fc;
           }
@@ -116,58 +118,57 @@
 
 .fundo-services {
   background: #fcfcfc;
-  padding: 60px 0;
+  padding-bottom: 40px;
 
   .box-services {
-    max-width: 55.25em;
+    max-width: 55.25rem;
     background: #fff;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     margin: 0 auto;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 5px;
     box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.1);
-    position: relative;
 
-    @media (max-width: 901px) {
+    @media (max-width: 930px) {
       & {
-        width: 18.75em;
+        width: 18.75rem;
         flex-direction: column;
       }
     }
 
     .img-service {
-      display: block;
       width: 24%;
       height: 170px;
       background-image: url("../img/xabout.webp");
       background-size: cover;
+      margin-right: 20px;
       background-repeat: no-repeat;
       background-position: center center;
-      position: relative;
-      right: 21px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
 
-      @media (max-width: 901px) {
+      @media (max-width: 930px) {
         & {
           width: 100%;
-          height: 200px;
-          right: 0;
+          margin-right: 0px;
+          border-bottom-left-radius: 0px;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
         }
       }
     }
 
     .project-services  {
-      @media (max-width: 901px) {
+      @media (max-width: 930px) {
       & {
+        width: 100%;
         padding: 20px 0;
-          border-bottom: 1px dashed #eeeded;
-          text-align: center;
+        border-bottom: 1px dashed #eeeded;
+        text-align: center;
         }
       }
 
-      @media (max-width: 901px) {
+      @media (max-width: 930px) {
         &:last-child {
           border-bottom: none;
         }
@@ -177,7 +178,7 @@
         margin-left: 50px;
         text-align: center;
 
-        @media (max-width: 901px) {
+        @media (max-width: 930px) {
           &  {
             margin-left: 0px;
           }
@@ -186,15 +187,15 @@
 
       p:first-child {
         color: #1fb6fc;
-        font-size: 3.125em;
+        font-size: 3.125rem;
         line-height: 1;
         margin-bottom: 10px;
       }
 
       p:last-child {
-        font-size: 0.875em;
+        font-size: 0.875rem;
         color: #2a3a60;
-        line-height: 1.2;
+        line-height: 1;
         text-transform: uppercase;
         font-weight: 600;
       }

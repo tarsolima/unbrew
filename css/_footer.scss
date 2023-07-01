@@ -11,7 +11,7 @@ footer {
     }
   
   .umbrew-footer {
-    max-width: 12.5em;
+    max-width: 12.5rem;
 
     @media (max-width: 609px) {
         & {
@@ -21,7 +21,7 @@ footer {
 
     h3 {
         color: #1fb6fc;
-        font-size: 1.125em;
+        font-size: 1.125rem;
         margin-bottom: 15px;
     }
 
@@ -48,7 +48,7 @@ footer {
         text-align: center;
         line-height: 2.8;
         border-radius: 5px;
-        font-size: 0.875em;
+        font-size: 0.875rem;
         transition: 0.3s;
 
         &:hover {
@@ -69,7 +69,7 @@ footer {
 
     h3 {
         color: #2a3a60;
-        font-size: 1.125em;
+        font-size: 1.125rem;
         margin-bottom: 15px;
     }
 
@@ -115,17 +115,17 @@ footer {
   }
   
   .have {
-    max-width: 12.5em;
+    max-width: 12.5rem;
 
     h3 {
         color: #2a3a60;
-        font-size: 1.125em;
+        font-size: 1.125rem;
         margin-bottom: 25px;
     }
 
     p {
         color: #88879e;
-        font-size: 0.875em;
+        font-size: 0.875rem;
         margin-bottom: 16px;
     }
   }
