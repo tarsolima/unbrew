@@ -177,7 +177,7 @@ header nav ul a {
   color: #1fb6fc;
 }
 .services .text-box h2 {
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   font-weight: 400;
   line-height: 1.2;
   color: #2a3a60;
@@ -659,7 +659,7 @@ header nav ul a {
   color: #fff;
   text-align: center;
 }
-.choose .box-choose-text h2 {
+.choose .box-choose-text .title-choose {
   font-size: 2.5rem;
   font-weight: 400;
   line-height: 1.2;
@@ -668,7 +668,7 @@ header nav ul a {
   margin-bottom: 1rem;
 }
 @media (max-width: 500px) {
-  .choose .box-choose-text h2 {
+  .choose .box-choose-text .title-choose {
     font-size: 2.3rem;
   }
 }
@@ -714,13 +714,12 @@ header nav ul a {
 .choose .box-choose h3 {
   font-size: 1.5rem;
   margin: 12.8px 0 10px 0;
-  line-height: 1.5;
   color: #2a3a60;
 }
 .choose .box-choose p {
   color: #88879e;
   text-align: center;
-  line-height: 1.8;
+  line-height: 1.5;
 }
 .choose .box-choose:hover {
   background: #1fb6fc;
@@ -737,44 +736,45 @@ header nav ul a {
   background: #fff;
 }
 .choose .p-choose {
-  max-width: 44.875rem;
+  max-width: 37.5rem;
   color: #88879e;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
   margin: 0 auto;
   padding: 0 10px;
 }
 
 .portfolio {
-  padding: 80px 0 60px 0;
+  padding: 30px 0;
 }
 .portfolio .portfolio-text {
   max-width: 37.5rem;
   margin: 0 auto;
   padding: 0 10px;
 }
-.portfolio .portfolio-text p:first-child {
+.portfolio .portfolio-text .subtitle-portfolio {
   color: #1fb6fc;
   text-align: center;
-  letter-spacing: 2px;
-  margin-bottom: -10px;
 }
-.portfolio .portfolio-text h2 {
-  font-size: 2.25rem;
+.portfolio .portfolio-text .title-portfolio {
+  font-size: 2.5rem;
+  line-height: 1.2;
   font-weight: 400;
-  line-height: 1.4;
   color: #2a3a60;
   text-align: center;
+  margin-bottom: 10px;
 }
 @media (max-width: 500px) {
-  .portfolio .portfolio-text h2 {
-    font-size: 2rem;
+  .portfolio .portfolio-text .title-portfolio {
+    font-size: 2.4rem;
   }
 }
-.portfolio .portfolio-text p {
+.portfolio .portfolio-text .text-portfolio {
   color: #88879e;
   text-align: center;
-  font-size: 0.9rem;
-  margin: 8px 0;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 .portfolio .portfolio-container {
   display: flex;
@@ -831,11 +831,10 @@ header nav ul a {
 }
 .portfolio .portfolio-box .portfolio-box-text p {
   display: inline-block;
-  margin-bottom: 10px;
   font-size: 0.8125rem;
   background: #f9faff;
   color: #88879e;
-  padding: 3px 8px;
+  padding: 3px 6px;
   border-radius: 4px;
   text-transform: uppercase;
   font-weight: bolder;
@@ -847,66 +846,59 @@ header nav ul a {
   font-weight: 500;
   color: #2a3a60;
 }
-.portfolio > p {
+.portfolio .view-portfolio {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
-.portfolio > p a {
+.portfolio .view-portfolio a {
   color: #1fb6fc;
   transition: 0.3s;
 }
-.portfolio > p a:hover {
+.portfolio .view-portfolio a:hover {
   color: #212529;
 }
 
 .pricing {
-  padding: 30px 0;
+  padding-bottom: 15px;
 }
-.pricing .pricing-text {
+.pricing .box-pricing {
   max-width: 37.5rem;
   margin: 0 auto;
   padding: 0 10px;
 }
-.pricing .pricing-text p:first-child {
+.pricing .box-pricing .subtitle-pricing {
   color: #1fb6fc;
   text-align: center;
-  letter-spacing: 2px;
-  margin-bottom: -1px;
 }
-.pricing .pricing-text h2 {
-  font-size: 2.25rem;
+.pricing .box-pricing .title-pricing {
+  font-size: 2.5rem;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.2;
   color: #2a3a60;
   text-align: center;
+  margin-bottom: 10px;
 }
 @media (max-width: 500px) {
-  .pricing .pricing-text h2 {
-    font-size: 1.9rem;
+  .pricing .box-pricing .title-pricing {
+    font-size: 2.4rem;
   }
 }
-@media (max-width: 396px) {
-  .pricing .pricing-text h2 {
-    font-size: 1.5rem;
-  }
-}
-.pricing .pricing-text p {
+.pricing .box-pricing .text-pricing {
   color: #88879e;
   text-align: center;
-  font-size: 0.9rem;
-  margin: 8px 0;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 .pricing .pricing-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   background: #fcfcfc;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 .pricing .pricing-box {
   margin: 30px 10px 10px 10px;
-  padding: 10px 10px 40px 10px;
+  padding: 10px 10px 30px 10px;
   width: 15.625rem;
   background: #fff;
   border-radius: 4px;
@@ -916,32 +908,30 @@ header nav ul a {
 .pricing .pricing-box:hover {
   box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11);
 }
-.pricing .pricing-box p sup {
-  font-size: 24px;
+.pricing .pricing-box .dollar {
+  font-size: 1.5rem;
   color: #aebbdb;
   position: relative;
   left: 8px;
 }
-.pricing .pricing-box p {
+.pricing .pricing-box .value {
   font-size: 3.125rem;
   font-weight: 400;
   color: #1fb6fc;
   margin-right: 15px;
 }
 .pricing .pricing-box h3 {
-  margin-bottom: 20px;
   color: #2a3a60;
   text-transform: uppercase;
-  font-size: 0.8125rem;
+  font-size: 1rem;
   letter-spacing: 1px;
   text-align: center;
+  margin-bottom: 10px;
 }
 .pricing .pricing-box ul li {
-  padding: 10px 0;
+  padding: 5px 0 10px 30px;
   color: #88879e;
-}
-.pricing .pricing-box ul li:last-child {
-  margin-bottom: 20px;
+  text-align: left;
 }
 .pricing .pricing-box ul li .fa-check {
   color: #1fb6fc;
@@ -955,9 +945,10 @@ header nav ul a {
   border-bottom-left-radius: 0px;
   padding: 15px 30px;
   transition: 0.3s;
+  display: inline-block;
   text-transform: uppercase;
   font-weight: bold;
-  margin-left: -5px;
+  margin-top: 10px;
 }
 .pricing .pricing-box a:hover {
   border-bottom-left-radius: 50px;
@@ -967,47 +958,40 @@ header nav ul a {
 .newsletter {
   background: #0d6efd;
 }
-.newsletter .box-newsletter {
+.newsletter .container-newsletter {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  padding: 48px 0;
+  padding: 50px 10px;
 }
-.newsletter .box-newsletter .newsletter-text {
-  padding: 0 10px;
+.newsletter .container-newsletter .box-newsletter {
+  margin-right: 10px;
 }
-@media (max-width: 953px) {
-  .newsletter .box-newsletter .newsletter-text {
-    margin-right: 10px;
-  }
-}
-@media (max-width: 901px) {
-  .newsletter .box-newsletter .newsletter-text .newsletter-text {
-    text-align: center;
-  }
-}
-.newsletter .box-newsletter .newsletter-text h2 {
+.newsletter .container-newsletter .box-newsletter .title-newsletter {
+  text-align: center;
   color: #fff;
   font-size: 1.6875rem;
   font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 5px;
 }
-@media (max-width: 609px) {
-  .newsletter .box-newsletter .newsletter-text h2 {
-    font-size: 1.3rem;
+.newsletter .container-newsletter .box-newsletter .text-newsletter {
+  color: #fff;
+  font-size: 1rem;
+}
+@media (max-width: 925px) {
+  .newsletter .container-newsletter .box-newsletter .text-newsletter {
+    margin-bottom: 30px;
   }
 }
-.newsletter .box-newsletter .newsletter-text p {
-  color: #fff;
-  margin-bottom: 30px;
+@media (max-width: 625px) {
+  .newsletter .container-newsletter .box-newsletter .text-newsletter {
+    text-align: center;
+  }
 }
 .newsletter .form {
   position: relative;
-}
-@media (max-width: 901px) {
-  .newsletter .form {
-    margin-right: 10px;
-  }
 }
 .newsletter .form input[type=email] {
   width: 18.75rem;
@@ -1019,11 +1003,6 @@ header nav ul a {
   border: none;
   border-bottom: 1px solid #fff;
   padding: 0 0 10px 10px;
-}
-@media (max-width: 901px) {
-  .newsletter .form input[type=email] input[type=remail] {
-    margin-left: 15px;
-  }
 }
 .newsletter .form input[type=email]::-moz-placeholder {
   color: #fff;
@@ -1048,9 +1027,9 @@ header nav ul a {
 footer {
   display: flex;
   justify-content: space-around;
-  padding: 80px 10px 60px 10px;
+  padding: 30px 10px;
 }
-@media (max-width: 609px) {
+@media (max-width: 800px) {
   footer {
     flex-direction: column;
     align-items: center;
@@ -1059,30 +1038,30 @@ footer {
 footer .umbrew-footer {
   max-width: 12.5rem;
 }
-@media (max-width: 609px) {
+@media (max-width: 800px) {
   footer .umbrew-footer {
     margin-bottom: 40px;
   }
 }
-footer .umbrew-footer h3 {
+footer .umbrew-footer .title-unbrew {
   color: #1fb6fc;
   font-size: 1.125rem;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
-footer .umbrew-footer p {
+footer .umbrew-footer .text-unbrew {
   color: #88879e;
-  margin: 8px 0 24px 0;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 footer .umbrew-footer ul {
   display: flex;
-  flex-wrap: wrap;
 }
 footer .umbrew-footer li + li {
   margin-left: 10px;
 }
 footer .umbrew-footer .icon-footer {
   color: #1fb6fc;
-  display: block;
+  display: inline-block;
   height: 40px;
   width: 40px;
   border: 1px solid #1fb6fc;
@@ -1097,16 +1076,16 @@ footer .umbrew-footer .icon-footer:hover {
   font-weight: bold;
   background: #1fb6fc;
 }
-@media (max-width: 609px) {
+@media (max-width: 800px) {
   footer .explore {
     margin-bottom: 40px;
     margin-right: 45px;
   }
 }
-footer .explore h3 {
+footer .explore .title-explore {
   color: #2a3a60;
   font-size: 1.125rem;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 footer .explore a {
   display: inline-block;
@@ -1145,15 +1124,14 @@ footer .explore #explore-background a:hover {
 footer .have {
   max-width: 12.5rem;
 }
-footer .have h3 {
+footer .have .title-have {
   color: #2a3a60;
   font-size: 1.125rem;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
-footer .have p {
+footer .have .text-have {
   color: #88879e;
   font-size: 0.875rem;
-  margin-bottom: 16px;
 }
 
 [data-dropdown] {

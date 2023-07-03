@@ -1,58 +1,50 @@
 .pricing {
-  padding: 30px 0;
+  padding-bottom: 15px;
 
-  .pricing-text {
+  .box-pricing {
     max-width: 37.5rem;
     margin: 0 auto;
     padding: 0 10px;
 
-    p:first-child {
+    .subtitle-pricing {
       color: #1fb6fc;
       text-align: center;
-      letter-spacing: 2px;
-      margin-bottom: -1px;
     }
 
-    h2 {
-      font-size: 2.25rem;
+    .title-pricing {
+      font-size: 2.5rem;
       font-weight: 400;
-      line-height: 1.4;
+      line-height: 1.2;
       color: #2a3a60;
       text-align: center;
+      margin-bottom: 10px;
 
       @media (max-width: 500px) {
         & {
-          font-size: 1.9rem;
-        }
-      }
-
-      @media (max-width:396px) {
-        & {
-          font-size: 1.5rem;
+          font-size: 2.4rem;
         }
       }
     }
 
-    p {
+    .text-pricing {
       color: #88879e;
       text-align: center;
-      font-size: 0.9rem;
-      margin: 8px 0;
+      font-size: 1rem;
+      line-height: 1.5;
     }
   }
 
   .pricing-container {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     background: #fcfcfc;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
   }
 
   .pricing-box {
     margin: 30px 10px 10px 10px;
-    padding: 10px 10px 40px 10px;
+    padding: 10px 10px 30px 10px;
     width: 15.625rem;
     background: #fff;
     border-radius: 4px;
@@ -63,14 +55,14 @@
       box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.11);
     }
 
-    p sup {
-      font-size: 24px;
+    .dollar {
+      font-size: 1.5rem;
       color: #aebbdb;
       position: relative;
       left: 8px;
     }
 
-    p {
+    .value {
       font-size: 3.125rem;
       font-weight: 400;
       color: #1fb6fc;
@@ -78,21 +70,18 @@
     }
 
     h3 {
-      margin-bottom: 20px;
       color: #2a3a60;
       text-transform: uppercase;
-      font-size: 0.8125rem;
+      font-size: 1rem;
       letter-spacing: 1px;
       text-align: center;
+      margin-bottom: 10px;
     }
 
     ul li {
-      padding: 10px 0;
+      padding: 5px 0 10px 30px;
       color: #88879e;
-
-      &:last-child {
-        margin-bottom: 20px;
-      }
+      text-align: left;
 
       .fa-check {
         color: #1fb6fc;
@@ -102,9 +91,10 @@
 
     a {
       @include configbuttom;
+      display: inline-block;
       text-transform: uppercase;
       font-weight: bold;
-      margin-left: -5px;
+      margin-top: 10px;
 
       &:hover {
         border-bottom-left-radius: 50px;

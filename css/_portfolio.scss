@@ -1,37 +1,36 @@
 .portfolio {
-  padding: 80px 0 60px 0;
-  
+  padding: 30px 0;
+
   .portfolio-text {
     max-width: 37.5rem;
     margin: 0 auto;
     padding: 0 10px;
 
-    p:first-child {
+    .subtitle-portfolio {
       color: #1fb6fc;
       text-align: center;
-      letter-spacing: 2px;
-      margin-bottom: -10px;
     }
 
-    h2 {
-      font-size: 2.25rem;
+    .title-portfolio {
+      font-size: 2.5rem;
+      line-height: 1.2;
       font-weight: 400;
-      line-height: 1.4;
       color: #2a3a60;
       text-align: center;
+      margin-bottom: 10px;
 
       @media (max-width: 500px) {
         & {
-          font-size: 2rem;
+          font-size: 2.4rem;
         }
       }
     }
 
-    p {
+    .text-portfolio {
       color: #88879e;
       text-align: center;
-      font-size: 0.9rem;
-      margin: 8px 0;
+      font-size: 1rem;
+      line-height: 1.5;
     }
   }
 
@@ -40,7 +39,7 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   .portfolio-box {
     margin: 30px 10px 10px 10px;
     width: 18.75rem;
@@ -67,15 +66,15 @@
     .port-img1 {
       @include img-testimonialePortifolio(url("../img/portfolio-1.webp"));
     }
-    
+
     .port-img2 {
       @include img-testimonialePortifolio(url("../img/portfolio-2.webp"));
     }
-    
+
     .port-img3 {
       @include img-testimonialePortifolio(url("../img/portfolio-3.webp"));
     }
-    
+
     .port-img4 {
       @include img-testimonialePortifolio(url("../img/portfolio-4.webp"));
     }
@@ -86,11 +85,10 @@
 
       p {
         display: inline-block;
-        margin-bottom: 10px;
         font-size: 0.8125rem;
         background: #f9faff;
         color: #88879e;
-        padding: 3px 8px;
+        padding: 3px 6px;
         border-radius: 4px;
         text-transform: uppercase;
         font-weight: bolder;
@@ -106,17 +104,17 @@
     }
   }
 
-  & > p {
+  .view-portfolio {
     text-align: center;
-    margin-top: 50px;
-  }
-  
-  & > p a {
-    color: #1fb6fc;
-    transition: 0.3s;
-  }
-  
-  & > p a:hover {
-    color: #212529;
+    margin-top: 30px;
+
+    a {
+      color: #1fb6fc;
+      transition: 0.3s;
+
+      &:hover {
+        color: #212529;
+      }
+    }
   }
 }
