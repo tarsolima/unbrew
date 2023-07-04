@@ -5,7 +5,7 @@
   list-style: none;
   text-decoration: none;
 }
-  
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -13,6 +13,8 @@ body {
   font-weight: 400;
 }
 
+// Cor para textos e paragrafos #222;
+// Cor para fundos roxo, será mantido o branco
 $bottom-blue: #1fb6fc;
 
 @mixin bottom-hover {
@@ -36,7 +38,7 @@ $bottom-blue: #1fb6fc;
 
 @mixin configbuttom($font-size: 0.875rem) {
   color: #fff;
-  background: $bottom-blue;
+  background-color: $bottom-blue;
   font-size: $font-size;
   border-radius: 50px;
   border-bottom-left-radius: 0px;

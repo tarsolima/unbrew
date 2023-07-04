@@ -48,11 +48,11 @@
     border-bottom-right-radius: 5px;
 
     &:hover {
-      background: #e8f8ff;
+      background-color: #e8f8ff;
     }
 
     &:hover .portfolio-box-text p {
-      background: #84d7fd;
+      background-color: #84d7fd;
       color: #fff;
     }
 
@@ -86,7 +86,7 @@
       p {
         display: inline-block;
         font-size: 0.8125rem;
-        background: #f9faff;
+        background-color: #f9faff;
         color: #88879e;
         padding: 3px 6px;
         border-radius: 4px;
