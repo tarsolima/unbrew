@@ -1,6 +1,6 @@
 .choose {
   padding: 30px 0;
-  background: #f9faff;
+  background-color: #f9faff;
   z-index: 0;
   position: relative;
 
@@ -58,7 +58,7 @@
 
   .box-choose {
     max-width: 16.875rem;
-    background: #fff;
+    background-color: #fff;
     margin: 10px;
     border-radius: 5px;
     padding: 30px 20px;
@@ -70,7 +70,7 @@
       width: 80px;
       height: 80px;
       border-radius: 50%;
-      background: #1fb6fc;
+      background-color: #1fb6fc;
       margin: 0 auto;
       transition: 0.3s;
 
@@ -97,7 +97,7 @@
     }
 
     &:hover {
-      background: #1fb6fc;
+      background-color: #1fb6fc;
       transform: translate3d(0, -10px, 0);
       box-shadow: 0 2px 22px -1px rgba(0, 0, 0, 0.3);
     }
@@ -113,7 +113,7 @@
     }
 
     &:hover .icon-choose {
-      background: #fff;
+      background-color: #fff;
     }
   }
 

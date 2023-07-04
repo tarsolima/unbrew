@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   padding: 30px 0 40px 0;
-  background: #fcfcfc;
+  background-color: #fcfcfc;
 
   @media (max-width: 1200px) {
     & {
@@ -59,7 +59,7 @@
     .box-space {
       .box {
         max-width: 14.375rem;
-        background: #fff;
+        background-color: #fff;
         text-align: center;
         border-radius: 5px;
         padding: 15px 0 20px 0;
@@ -68,7 +68,7 @@
         transition: 0.3s;
 
         &:hover {
-          background: #1fb6fc;
+          background-color: #1fb6fc;
           transform: translate3d(0, -10px, 0);
           box-shadow: 0 2px 22px -1px rgba(0, 0, 0, 0.3);
         }
@@ -98,7 +98,7 @@
           border-radius: 50%;
           width: 70px;
           height: 70px;
-          background: #eff2ff;
+          background-color: #eff2ff;
 
           .fa-bullseye,
           .fa-search-plus,
@@ -117,12 +117,12 @@
 }
 
 .fundo-services {
-  background: #fcfcfc;
+  background-color: #fcfcfc;
   padding-bottom: 40px;
 
   .box-services {
     max-width: 55.25rem;
-    background: #fff;
+    background-color: #fff;
     display: flex;
     align-items: center;
     margin: 0 auto;

@@ -6,7 +6,7 @@
     display: none;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.7)
+    background-color: rgba(0, 0, 0, 0.7)
   }
   
   .container-modal.active {
@@ -29,7 +29,7 @@
   
   [data-abrir="modal"] {
     color: #fff;
-    background: $bottom-blue;
+    background-color: $bottom-blue;
     font-size: 1rem;
     border-radius: 50px;
     border-bottom-left-radius: 0px;
@@ -48,7 +48,7 @@
     justify-content:center;
     align-items: center;
     position: relative;
-    background: #fff;
+    background-color: #fff;
     width: 350px;
     border-radius: 5px;
 
@@ -64,7 +64,7 @@
       width: 30px;
       border-radius: 50%;
       border: none;
-      background: $bottom-blue;
+      background-color: $bottom-blue;
       color: #fff;
       font-size: 18px;
       box-shadow: 0 0 0 4px #fff;
@@ -72,7 +72,7 @@
       transition: all .3s;
   
       &:hover {
-        background: #BC6FF1;
+        background-color: #BC6FF1;
       }
     }
   
@@ -106,7 +106,7 @@
       button {
       color: #fff;
       width: 100px;
-      background: $bottom-blue;
+      background-color: $bottom-blue;
       font-size: 0.875rem;
       text-transform: uppercase;
       font-weight: bold;
@@ -119,7 +119,7 @@
       transition: all 0.3s;
         
         &:hover {
-          background: #bc6ff1;
+          background-color: #bc6ff1;
         }
       }
     }
