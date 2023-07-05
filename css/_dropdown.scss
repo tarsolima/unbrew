@@ -1,6 +1,6 @@
 [data-dropdown] {
   position: relative;
-  
+
   .menu-list {
     display: none;
     position: absolute;
@@ -42,7 +42,7 @@
       }
     }
   }
-  
+
   &:hover .menu-list,
   &.active .menu-list {
     display: block;
@@ -53,13 +53,13 @@
     animation: none;
   }
   }
-  
+
   @keyframes initdropdown {
     from { 
       opacity: 0;
       transform: translate3d(0, -15px, 0);
     }
-  
+
     to {
       opacity: 1;
       transform: translate3d(0, 0px, 0);

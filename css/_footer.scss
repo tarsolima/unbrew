@@ -26,8 +26,7 @@ footer {
     }
 
     .text-unbrew {
-        color: #88879e;
-        line-height: 1.5;
+@include paragraphs;
         margin-bottom: 20px;
     }
 
@@ -75,7 +74,7 @@ footer {
 
     a {
         display: inline-block;
-        color: #88879e;
+        color: #222;
         margin-bottom: 4.8px;
         transition: 0.3s;
 
@@ -124,8 +123,7 @@ footer {
     }
 
     .text-have {
-        color: #88879e;
-        font-size: 0.875rem;
+        @include paragraphs(#222, 0.875rem);
     }
   }
 }

@@ -12,10 +12,7 @@
     }
 
     .title-portfolio {
-      font-size: 2.5rem;
-      line-height: 1.2;
-      font-weight: 400;
-      color: #2a3a60;
+      @include headings;
       text-align: center;
       margin-bottom: 10px;
 
@@ -27,10 +24,8 @@
     }
 
     .text-portfolio {
-      color: #88879e;
+      @include paragraphs;
       text-align: center;
-      font-size: 1rem;
-      line-height: 1.5;
     }
   }
 
@@ -83,7 +78,7 @@
       width: 100%;
       padding: 15px;
 
-      p {
+      .portfolio-box-main-content {
         display: inline-block;
         font-size: 0.8125rem;
         background-color: #f9faff;
@@ -96,7 +91,7 @@
         transition: 0.3s;
       }
 
-      h3 a {
+      .portfolio-box-link {
         font-size: 1rem;
         font-weight: 500;
         color: #2a3a60;
@@ -108,7 +103,7 @@
     text-align: center;
     margin-top: 30px;
 
-    a {
+    .portfolio-link {
       color: #1fb6fc;
       transition: 0.3s;
 
