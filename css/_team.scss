@@ -12,13 +12,10 @@
       text-align: center;
     }
 
-    h2 {
-      font-size: 2.5rem;
-      font-weight: 400;
-      line-height: 1.2;
-      color: #2a3a60;
+    .title-team {
+      @include headings;
       text-align: center;
-      margin-bottom: 1rem;
+      margin-bottom: 10px;
 
       @media (max-width: 500px) {
         & {
@@ -28,10 +25,8 @@
     }
 
     .text-team {
-      color: #88879e;
-      line-height: 1.5;
+      @include paragraphs;
       text-align: center;
-      font-size: 1rem;
     }
   }
 
@@ -52,14 +47,14 @@
       background-color: #f9f1fe;
     }
 
-    h2 {
+    .person-names-team {
       text-align: center;
       margin: 5px 0;
       font-size: 1.25rem;
       color: #2a3a60;
     }
 
-    p {
+    .position {
       color: #88879e;
       text-align: center;
       font-size: 0.9rem;

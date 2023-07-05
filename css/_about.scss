@@ -35,18 +35,9 @@
         color: #1fb6fc;
     }
 
-    .text-about {
-        color: #88879e;
-        line-height: 1.5;
-        margin-bottom: 1rem;
-    }
-
-    h2 {
-        font-size: 2.5rem;
-        font-weight: 400;
-        line-height: 1.2;
-        margin-bottom: 1rem;
-        color: #2a3a60;
+    .title-about {
+        @include headings;
+        margin-bottom: 10px;
 
         @media (max-width: 500px) {
             & {
@@ -55,10 +46,13 @@
         }
     }
 
-    a {
-        display: inline-block;
+    .text-about {
+        @include paragraphs;
+        margin-bottom: 1rem;
+    }
+
+    .button-about {
         @include configbuttom;
-        margin-left: -5px;
 
         &:hover {
             @include bottom-hover;

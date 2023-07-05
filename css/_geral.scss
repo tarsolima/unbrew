@@ -13,8 +13,14 @@ body {
   font-weight: 400;
 }
 
-// Cor para textos e paragrafos #222;
-// Cor para fundos roxo, será mantido o branco
+$roboto: "Roboto", sans-serif;
+$arial: Arial, Helvetica, sans-serif;;
+
+$headings-color: #222;
+$paragraphs-color: #222;
+
+$color-text: #222;
+
 $bottom-blue: #1fb6fc;
 
 @mixin bottom-hover {
@@ -37,6 +43,7 @@ $bottom-blue: #1fb6fc;
 }
 
 @mixin configbuttom($font-size: 0.875rem) {
+  display: inline-block;
   color: #fff;
   background-color: $bottom-blue;
   font-size: $font-size;
@@ -44,4 +51,20 @@ $bottom-blue: #1fb6fc;
   border-bottom-left-radius: 0px;
   padding: 15px 30px;
   transition: 0.3s;
+}
+
+
+@mixin headings($color: $headings-color, $fontWeight: 400, $fontSize: 2.5rem, $fontFamily: $roboto) {
+  color: $color;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  font-family: $fontFamily;
+  line-height: 1.2;
+}
+
+@mixin paragraphs($color: $paragraphs-color, $fontsize: 1rem, $fontFamily: $arial) {
+  color: $color;
+  font-size: $fontsize;
+  font-family: $fontFamily;
+  line-height: 1.5;
 }
