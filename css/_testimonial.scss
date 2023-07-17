@@ -1,24 +1,19 @@
 .testimonial {
-  padding: 60px 0 80px 0;
+  padding: 30px 0 30px 0;
   background-color: #f9faff;
   
-  .testimonial-text {
+  .box-testimonial-title {
     max-width: 37.5rem;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 8px;
 
-    p:first-child {
+    .subtitle-testimonial {
       color: #1fb6fc;
       text-align: center;
-      letter-spacing: 2px;
-      margin-bottom: -1px;
     }
 
-    h2 {
-      font-size: 2.5rem;
-      font-weight: 400;
-      line-height: 1.4;
-      color: #2a3a60;
+    .title-testimonial {
+      @include headings;
       text-align: center;
 
       @media (max-width: 500px) {
@@ -28,37 +23,33 @@
       }
     }
 
-    p {
-      color: #88879e;
+    .text-testimonial {
+      @include paragraphs;
       text-align: center;
-      font-size: 0.9rem;
       margin: 10px 0 24px 0;
     }
   }
 
   .testimonial-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     margin-top: 48px;
 
     .box-testimonial {
-      width: 23.125rem;
-      background-color: #fff;
-      margin: 20px 20px 40px 20px;
+      min-width: 23.125em;
+      background: #fff;
+      margin: 20px auto 40px auto;
       padding: 40px 30px 30px 30px;
       border-radius: 10px;
       display: flex;
       flex-direction: column;
       position: relative;
-      box-shadow: 0px 5px 12px -9px rgba(0, 0, 0, 0.17);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 
-      @media (max-width: 425px) {
-        & {
-          margin: 20px 10px 40px 10px;
-          padding: 40px 10px 30px 10px;
-        }
+      @media (max-width: 410px) {
+        min-width: 20em;
+      }
+
+      @media (max-width: 340px) {
+        min-width: 19.125em;
       }
 
       .quote {
@@ -104,10 +95,8 @@
         margin-top: 30px;
         margin-bottom: 5px;
 
-        @media (max-width: 375px) {
-          & {
-            margin-left: 20px;
-          }
+        @media (max-width: 410px) {
+          margin-left: 40px;
         }
 
         span {
