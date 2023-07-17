@@ -527,60 +527,61 @@ header nav ul a {
 }
 
 .testimonial {
-  padding: 60px 0 80px 0;
+  padding: 30px 0 30px 0;
   background-color: #f9faff;
 }
-.testimonial .testimonial-text {
+.testimonial .box-testimonial-title {
   max-width: 37.5rem;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 8px;
 }
-.testimonial .testimonial-text p:first-child {
+.testimonial .box-testimonial-title .subtitle-testimonial {
   color: #1fb6fc;
   text-align: center;
-  letter-spacing: 2px;
-  margin-bottom: -1px;
 }
-.testimonial .testimonial-text h2 {
-  font-size: 2.5rem;
+.testimonial .box-testimonial-title .title-testimonial {
+  color: #222;
   font-weight: 400;
-  line-height: 1.4;
-  color: #2a3a60;
+  font-size: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2;
   text-align: center;
 }
 @media (max-width: 500px) {
-  .testimonial .testimonial-text h2 {
+  .testimonial .box-testimonial-title .title-testimonial {
     font-size: 2rem;
   }
 }
-.testimonial .testimonial-text p {
-  color: #88879e;
+.testimonial .box-testimonial-title .text-testimonial {
+  color: #222;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
   text-align: center;
-  font-size: 0.9rem;
   margin: 10px 0 24px 0;
 }
 .testimonial .testimonial-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
   margin-top: 48px;
 }
 .testimonial .testimonial-container .box-testimonial {
-  width: 23.125rem;
-  background-color: #fff;
-  margin: 20px 20px 40px 20px;
+  min-width: 23.125em;
+  background: #fff;
+  margin: 20px auto 40px auto;
   padding: 40px 30px 30px 30px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   position: relative;
-  box-shadow: 0px 5px 12px -9px rgba(0, 0, 0, 0.17);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
-@media (max-width: 425px) {
+@media (max-width: 410px) {
   .testimonial .testimonial-container .box-testimonial {
-    margin: 20px 10px 40px 10px;
-    padding: 40px 10px 30px 10px;
+    min-width: 20em;
+  }
+}
+@media (max-width: 340px) {
+  .testimonial .testimonial-container .box-testimonial {
+    min-width: 19.125em;
   }
 }
 .testimonial .testimonial-container .box-testimonial .quote {
@@ -629,9 +630,9 @@ header nav ul a {
   margin-top: 30px;
   margin-bottom: 5px;
 }
-@media (max-width: 375px) {
+@media (max-width: 410px) {
   .testimonial .testimonial-container .box-testimonial .persona {
-    margin-left: 20px;
+    margin-left: 40px;
   }
 }
 .testimonial .testimonial-container .box-testimonial .persona span {
