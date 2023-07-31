@@ -1,4 +1,3 @@
-// eslint-disable-next-line max-classes-per-file
 import debounce from './debounce.js';
 
 export class Slide {
@@ -6,7 +5,7 @@ export class Slide {
     this.slide = document.querySelector(slide);
     this.wrapper = document.querySelector(wrapper);
     this.slides = [...this.slide.children];
-    this.dist = { finalPositon: 0, startX: 0, movement: 0 };
+    this.dist = { finalPosition: 0, startX: 0, movement: 0 };
     this.activeClass = 'active';
     this.changeEvent = new Event('changeEvent');
     this.autoPlayTime = 5000; // Tempo em milissegundos para a rotação automática
@@ -18,6 +17,8 @@ export class Slide {
     this.activePrevSlide = this.activePrevSlide.bind(this);
     this.activeNextSlide = this.activeNextSlide.bind(this);
     this.onResize = debounce(this.onResize.bind(this), 200);
+
+    this.init();
   }
 
   transition(active) {
@@ -31,19 +32,12 @@ export class Slide {
 
   updatePosition(clientX) {
     this.dist.movement = (this.dist.startX - clientX) * 1.6;
-    return this.dist.finalPositon - this.dist.movement;
+    return this.dist.finalPosition - this.dist.movement;
   }
 
   onStart(event) {
-    let movetype;
-    if (event.type === 'mousedown') {
-      event.preventDefault();
-      this.dist.startX = event.clientX;
-      movetype = 'mousemove';
-    } else {
-      this.dist.startX = event.changedTouches[0].clientX;
-      movetype = 'touchmove';
-    }
+    const movetype = event.type === 'mousedown' ? 'mousemove' : 'touchmove';
+    this.dist.startX = event.type === 'mousedown' ? event.clientX : event.changedTouches[0].clientX;
     this.wrapper.addEventListener(movetype, this.onMove);
     this.transition(false);
     this.stopAutoPlay();
@@ -58,7 +52,7 @@ export class Slide {
   onEnd(event) {
     const movetype = event.type === 'mouseup' ? 'mousemove' : 'touchmove';
     this.wrapper.removeEventListener(movetype, this.onMove);
-    this.dist.finalPositon = this.dist.movePosition;
+    this.dist.finalPosition = this.dist.movePosition;
     this.changeSlideOnEnd();
     this.transition(true);
     this.startAutoPlay();
@@ -80,8 +74,6 @@ export class Slide {
     this.wrapper.addEventListener('mouseup', this.onEnd);
     this.wrapper.addEventListener('touchend', this.onEnd);
   }
-
-  // Slides config
 
   slidePosition(slide) {
     const margin = (this.wrapper.offsetWidth - slide.offsetWidth) / 2;
@@ -108,7 +100,7 @@ export class Slide {
     const activeSlide = this.slideArray[index];
     this.moveSlide(activeSlide.position);
     this.slidesIndexNav(index);
-    this.dist.finalPositon = activeSlide.position;
+    this.dist.finalPosition = activeSlide.position;
     this.changeActiveClass();
     this.wrapper.dispatchEvent(this.changeEvent);
   }
@@ -163,16 +155,14 @@ export class Slide {
     this.addSlideEvents();
     this.slidesConfig();
     this.addResizeEvent();
-    this.changeSlide(0);
+    this.changeSlide(Math.floor(this.slides.length / 2)); // Começa pelo slide do meio
     this.startAutoPlay();
-    return this;
   }
 }
 
 export default class SlideNav extends Slide {
   constructor(slide, wrapper) {
     super(slide, wrapper);
-    this.bindControlEvents();
   }
 
   addArrow(prev, next) {
